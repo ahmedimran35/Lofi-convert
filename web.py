@@ -60,7 +60,6 @@ def main():
     st.set_page_config(page_title="Lofi Converter", page_icon=":microphone:", layout="wide", )
     
     st.title(":microphone: Lofi Converter")
-    st.markdown("# Bookmark new [Website](https://lofi-converter.samevibe.in/)")
     st.info("Tip: Use Headphone for best experience :headphones:")
     youtube_link = st.text_input("Enter the YouTube link 🔗 of the song to convert:", placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     try:
@@ -94,23 +93,6 @@ def main():
         st.warning("Error Try again")
 
     # Footer and BuyMeACoffee button
-    st.markdown("""
-        <h10 style="text-align: center; position: fixed; bottom: 3rem;">Give a ⭐ on <a href="https://github.com/samarthshrivas/LoFi-Converter-GUI"> Github</a> </h10>""",
-        unsafe_allow_html=True)
-    button = """<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="SamarthShrivas" data-color="#FFDD00" data-emoji="📖" data-font="Cookie" data-text="Buy me a book" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>"""
-    html(button, height=70, width=220)
-    st.markdown(
-        """
-        <style>
-            iframe[width="220"] {
-                position: fixed;
-                bottom: 60px;
-                right: 40px;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
 
 # Function to get user settings
 def get_user_settings():
