@@ -5,7 +5,6 @@ import yt_dlp
 import uuid
 from streamlit.components.v1 import html, components
 
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # Function to delete temporary audio files
 def delete_temp_files(audio_file, output_file, mp3_file):
@@ -108,13 +107,7 @@ def get_user_settings():
         slow_factor = st.slider("Slow Factor", min_value=0.0, max_value=0.2, value=0.08, step=0.01)
     return room_size, damping, wet_level, dry_level, delay, slow_factor
             # Hide Streamlit elements with custom CSS immediately after page config
-hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
+
 
 if __name__ == "__main__":
     main()
