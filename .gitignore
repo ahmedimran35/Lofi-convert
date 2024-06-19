@@ -1,0 +1,9 @@
+.streamlit/
+hooks/
+main.spec
+main.py
+uploaded_files/*
+venv/*
+tmp.wav
+__pycache__
+temp.py
